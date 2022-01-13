@@ -7,4 +7,5 @@
 * [✊ 开始动手吧](kai-shi-dong-shou-ba.md)
 * [🛠 Tools模块](tools-mo-kuai/README.md)
   * [📓 集成化所有的提示信息](tools-mo-kuai/ji-cheng-hua-suo-you-de-ti-shi-xin-xi.md)
+  * [📅 生成ID和获取时间](tools-mo-kuai/sheng-cheng-id-he-huo-qu-shi-jian.md)
 * [🎋 搭建数据结构](da-jian-shu-ju-jie-gou.md)
