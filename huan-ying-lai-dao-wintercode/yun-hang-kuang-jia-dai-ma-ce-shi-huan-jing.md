@@ -8,6 +8,8 @@ description: 运行框架代码测试环境。
 
 根据仓库代码的`README.md`说明简单测试环境。
 
+![框架代码初始界面](../.gitbook/assets/initial.png)
+
 {% hint style="success" %}
 至此，你对于项目的基本思路应该了解完毕，并且环境也配置完毕了，所以，现在可以着手开始写代码了。
 {% endhint %}

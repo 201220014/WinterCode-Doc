@@ -88,7 +88,7 @@ $(TARGET): $(OBJS)
 
 现阶段你或许不需要详细了解Makefile的全部含义，当然，如果你感兴趣，可以查看这个链接： [https://blog.csdn.net/weixin\_38391755/article/details/80380786](https://blog.csdn.net/weixin\_38391755/article/details/80380786)
 
-{% hint style="danger" %}
+{% hint style="warning" %}
 值得注意一下的是，在这个Makefile中，我们约定了所有的头文件放在`include`文件夹里，所有的源文件放在`src`文件夹里，所有项目构建过程中生成的的目标文件放在对应源文件的统一目录下。
 {% endhint %}
 
