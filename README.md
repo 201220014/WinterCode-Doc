@@ -1,8 +1,10 @@
 ---
 description: WinterCode Project for C-Beginners.
+cover: .gitbook/assets/pexels-flo-maderebner-869258.jpg
+coverY: 0
 ---
 
-# 欢迎来到 WinterCode
+# 😄 欢迎来到 WinterCode
 
 **Email： 201220014@smail.nju.edu.cn**
 
@@ -39,6 +41,8 @@ Linux文件管理基本命令： [https://www.runoob.com/linux/linux-file-conten
 {% endhint %}
 
 ## 需求汇总
+
+![](.gitbook/assets/pic00.png)
 
 再这个项目中，我们需要实现如下的基本需求：
 
@@ -93,4 +97,7 @@ Linux文件管理基本命令： [https://www.runoob.com/linux/linux-file-conten
 | interface | 接口/界面模块，实现用户和数据结构的交互    |
 | main.c    | 程序入口                    |
 
-到此，你应该对本项目的基本框架有所了解了，下面，让我们正式开始吧:smile:！
+{% hint style="success" %}
+到此，你应该对本项目的基本框架有所了解了，下面，让我们来看一下这个项目的构建过程吧:smile:！
+{% endhint %}
+
