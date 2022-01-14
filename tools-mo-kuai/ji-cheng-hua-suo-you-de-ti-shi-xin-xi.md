@@ -4,7 +4,7 @@ description: 将所有的提示信息集中在hint模块里面。
 
 # 📓 集成化所有的提示信息
 
-## 我们到哪儿了
+## 当前进度
 
 ```c
 .---+- include -+- tools -+- color.h
@@ -54,7 +54,7 @@ void invalidMessage();
 生成字符画推荐一个网站： [http://patorjk.com/software/taag/#p=display\&f=Big\&t=Whale%20Market%0A](http://patorjk.com/software/taag/#p=display\&f=Big\&t=Whale%20Market%0A)
 {% endhint %}
 
-{% hint style="warning" %}
+{% hint style="danger" %}
 先思考一下自己将会如何实现，再看我的实现。
 {% endhint %}
 

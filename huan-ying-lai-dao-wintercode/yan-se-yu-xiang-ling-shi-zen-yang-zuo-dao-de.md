@@ -57,6 +57,8 @@ extern const char* HIDE;
 {% hint style="warning" %}
 这里涉及到了`extern`关键字声明外部变量的知识点，如果有不清晰的地方，请先寻找相关教程复习一下这个知识点。
 
+参考教程： [https://www.runoob.com/cprogramming/c-storage-classes.html](https://www.runoob.com/cprogramming/c-storage-classes.html)
+
 本教程后续将默认读者知道`extern`关键字的功能与使用方法。
 {% endhint %}
 

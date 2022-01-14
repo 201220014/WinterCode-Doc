@@ -16,13 +16,13 @@ int main() {
 }
 ```
 
-c程序，或者说c家族程序从源代码到可执行程序的过程可以用下图表示：
+C程序，或者说C家族程序从源代码到可执行程序的过程可以用下图表示：
 
-![](../.gitbook/assets/pic02.png)
+![C程序的构建过程](../.gitbook/assets/pic02.png)
 
 经过了编译预处理、编译、汇编、链接四个阶段。
 
-在linux下使用gcc构建c程序的过程（以hello.c为例）可以用如下命令表示：
+在`linux`下使用`gcc`构建c程序的过程（以`hello.c`为例）可以用如下命令表示：
 
 ```bash
 gcc -c hello.c -o hello.o # 编译
