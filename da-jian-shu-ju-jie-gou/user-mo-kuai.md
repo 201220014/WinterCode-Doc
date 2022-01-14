@@ -47,6 +47,14 @@ typedef struct {
 } User;
 ```
 
+{% hint style="warning" %}
+结构体很常用了，不过为了以防万一有用法不清晰的地方，还是附上一个参考教程吧。
+
+参考教程：[https://www.runoob.com/w3cnote/c-structures-intro.html](https://www.runoob.com/w3cnote/c-structures-intro.html)
+
+之后的内容中，笔者将默认读者至少了解了结构体的基本用法。至于结构体和联合体的混合嵌套使用、结构体的位域等其他的高阶技巧有兴趣的可以自行了解。
+{% endhint %}
+
 这里，我们引入了一个头文件config.h，这个头文件是储存一些全局设定的，这里我们约定本项目中所有的字符串长度均不超过`MAX_LEN`，我们将其定义在`config.h`中。
 
 ```c
@@ -58,14 +66,14 @@ typedef struct {
 
 ## 选择数据结构
 
-我选用了数组结构，因此我们需要约定用户的总数不超过`MAX_USER`，并且在config.h中定义这个宏。
+我选用了数组结构，因此我们需要约定用户的总数不超过`MAX_USER`，并且在`config.h`中定义这个宏。
 
 ```c
 // config.h
 #define MAX_USER    128
 ```
 
-我们在user.c中定义这个数据结构，同时定义用户的初始总数为0：
+我们在`user.c`中定义这个数据结构，同时定义用户的初始总数为0：
 
 ```c
 #include "user/user.h"
@@ -210,7 +218,7 @@ users[totalUser].address, &(users[totalUser].balance)) != EOF) totalUser++;
 
 这里使用`static`关键字，将`filePath`的作用域限制在本模块内部（C语言以`.c`文件作为模块划分的基本单位），这样在其他模块里面就可以继续使用`filePath`这个标识符作为文件路径的常量名了。
 
-这种手法在编写接口的时候会体现的淋漓尽致，可以期待一下:smile:。
+这种手法在编写界面模块的时候会体现的淋漓尽致，可以期待一下:smile:。
 
 #### 将用户信息导出到外部文件
 
@@ -228,6 +236,8 @@ users[i].contact, users[i].address, users[i].balance);
     fclose(pf);
 }
 ```
+
+> 为了避免浮点数打印精度不确定导致打印格式不统一的问题，我们约定在本项目中，所有的浮点数保留小数点后1位。哪怕用户输入了更高精度的浮点数，因为打印规格符统一使用`.1f`，故而当该输入被打印到标准输出的时候总是1位小数。同时，在经历一次文件读写之后，实际精度也会变成一位小数。
 
 #### 获取用户对象
 
@@ -399,7 +409,7 @@ static const char* header = "|ID         |Name       |Contact    |Address    |Ba
 static const char* divide = "+-----------+-----------+-----------+-----------+-----------+";
 
 /**
- * @brief 打印单个作为表格的一行
+ * @brief 打印单个用户作为表格的一行
  * 
  * @param i 用户下标
  */
@@ -444,6 +454,14 @@ void printUsers() {
 这个地方只是一个print的优化处理，在写interface模块的时候你会发现这样的处理能够精简特别多不必要的重复代码书写。
 
 所以在继续之前还请稍微理解一下这样的处理方式。
+{% endhint %}
+
+{% hint style="warning" %}
+在这个部分还用到了printf函数的各种格式化输出的功能，如果对于模式串含义还不清晰的话可以寻找相关教程复习一下。
+
+参考教程： [https://www.runoob.com/cprogramming/c-function-printf.html](https://www.runoob.com/cprogramming/c-function-printf.html)
+
+之后的内容中笔者会默认各位清楚了printf模式串中各种规定符的含义。
 {% endhint %}
 
 #### 检查用户名和密码是否匹配
