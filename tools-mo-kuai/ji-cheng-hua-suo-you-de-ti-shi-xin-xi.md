@@ -12,6 +12,7 @@ description: 将所有的提示信息集中在hint模块里面。
     | 
     +-   src   -+- tools -+- color.c
                 |         +- hint.c <---
+                |
                 +- main.c
 ```
 

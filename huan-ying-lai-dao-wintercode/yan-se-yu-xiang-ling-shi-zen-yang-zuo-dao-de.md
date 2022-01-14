@@ -62,6 +62,14 @@ extern const char* HIDE;
 本教程后续将默认读者知道`extern`关键字的功能与使用方法。
 {% endhint %}
 
+{% hint style="warning" %}
+这里还涉及到了C头文件引用的相关知识点，特别是自定义头文件的引用，这个知识点可能并没有在程序设计基础课程中被展开讲解，希望不清楚的读者先寻找相关教程学习一下这部分知识。
+
+参考教程： [https://www.runoob.com/cprogramming/c-header-files.html](https://www.runoob.com/cprogramming/c-header-files.html)
+
+本教程后续将默认读者知道自定义C头文件的书写格式和引用规则。
+{% endhint %}
+
 正如我们前面所说，头文件里面应该放声明，定义放在源文件里面。
 
 ```c

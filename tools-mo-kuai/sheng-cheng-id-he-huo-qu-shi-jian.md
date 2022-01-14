@@ -14,7 +14,9 @@ description: 生成各类ID和获取时间的内容封装成一个info模块。
     +-   src   -+- tools -+- color.c
                 |         +- hint.c
                 |         +- info.c <---
+                |
                 +- data  -+- id.txt <---
+                |
                 +- main.c
 ```
 
@@ -46,6 +48,8 @@ void genID(char* dest, char type);
 
 ```c
 // info.c
+#include "tools/hint.h"
+
 #include <stdio.h>
 #include <string.h>
 
@@ -115,6 +119,9 @@ void getDate(char* dest);
 ### 实现
 
 ```c
+// info.c
+#include "tools/hint.h"
+
 #include <time.h>
 #include <string.h>
 
@@ -128,5 +135,14 @@ void getDate(char* dest) {
 
 {% hint style="warning" %}
 生成日期的函数用到了time.h头文件，可以先寻找相关教程学习一下。
+
+参考教程：[https://www.runoob.com/cprogramming/c-standard-library-time-h.html](https://www.runoob.com/cprogramming/c-standard-library-time-h.html)
+
+在之后的内容中，笔者将会默认读者了解`time.h`的基本内容。
 {% endhint %}
 
+{% hint style="success" %}
+至此，我们已经基本写完了tools文件夹下需要的所有模块。
+
+如果你阅读info.h，你应该还会发现两个宏定义，这两个宏是帮助精简打印信息函数实现所定义的宏，在之后的教程中会提及。
+{% endhint %}
