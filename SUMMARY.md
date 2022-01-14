@@ -10,3 +10,4 @@
   * [📅 生成ID和获取时间](tools-mo-kuai/sheng-cheng-id-he-huo-qu-shi-jian.md)
 * [🎋 搭建数据结构](da-jian-shu-ju-jie-gou/README.md)
   * [👥 User模块](da-jian-shu-ju-jie-gou/user-mo-kuai.md)
+  * [🪵 Good模块](da-jian-shu-ju-jie-gou/good-mo-kuai.md)

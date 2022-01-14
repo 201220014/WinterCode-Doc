@@ -1,5 +1,7 @@
 ---
 description: 让我们为自己的项目编写一些实用的工具吧！
+cover: ../.gitbook/assets/tools.jpeg
+coverY: 176.2545899632803
 ---
 
 # 🛠 Tools模块

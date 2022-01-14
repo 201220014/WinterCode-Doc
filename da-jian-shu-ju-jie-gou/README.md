@@ -1,5 +1,7 @@
 ---
 description: 为之后交互界面的编写做准备。
+cover: ../.gitbook/assets/data.jpeg
+coverY: 0
 ---
 
 # 🎋 搭建数据结构
