@@ -1,7 +1,8 @@
 ---
 description: 让我们为自己的项目编写一些实用的工具吧！
-cover: ../.gitbook/assets/tools.jpeg
-coverY: 176.2545899632803
+cover: >-
+  https://images.unsplash.com/photo-1497215728101-856f4ea42174?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxOTcwMjR8MXwxfHNlYXJjaHw4fHx0b29sc3xlbnwwfHx8fDE2NDIyNzE4NDY&ixlib=rb-1.2.1&q=85
+coverY: -267.817575083426
 ---
 
 # 🛠 Tools模块

@@ -1,7 +1,8 @@
 ---
 description: 为之后交互界面的编写做准备。
-cover: ../.gitbook/assets/data.jpeg
-coverY: 0
+cover: >-
+  https://images.unsplash.com/photo-1640861694386-4e5ff638e6b7?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxOTcwMjR8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NDIyNzE3MDg&ixlib=rb-1.2.1&q=85
+coverY: 353.7096774193548
 ---
 
 # 🎋 搭建数据结构

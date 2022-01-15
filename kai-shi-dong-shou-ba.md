@@ -1,7 +1,8 @@
 ---
 description: Getting Over it!
-cover: .gitbook/assets/coding.jpeg
-coverY: 87.9638009049774
+cover: >-
+  https://images.unsplash.com/photo-1499750310107-5fef28a66643?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxOTcwMjR8MHwxfHNlYXJjaHwzfHx3b3JraW5nfGVufDB8fHx8MTY0MjI3MTgxNw&ixlib=rb-1.2.1&q=85
+coverY: -460.5116796440489
 ---
 
 # ✊ 开始动手吧

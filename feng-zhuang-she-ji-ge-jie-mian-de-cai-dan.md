@@ -1,7 +1,8 @@
 ---
 description: 正式编写交互界面前的最后一步，封装设计各种菜单。
-coverY: 166.40711902113458
-cover: .gitbook/assets/menu.jpeg
+coverY: 72.08565072302558
+cover: >-
+  https://images.unsplash.com/photo-1568031813264-d394c5d474b9?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxOTcwMjR8MHwxfHNlYXJjaHwxfHxtZW51fGVufDB8fHx8MTY0MjI3MTc3Mw&ixlib=rb-1.2.1&q=85
 ---
 
 # 📃 封装设计各界面的菜单
