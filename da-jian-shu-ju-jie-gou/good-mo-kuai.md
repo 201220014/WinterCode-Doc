@@ -32,7 +32,7 @@ description: 搭建储存和操作商品信息的底层数据结构
                 +- main.c
 ```
 
-{% hint style="info" %}
+{% hint style="danger" %}
 其实商品模块和之前用户模块的设计过程是类似的，读者可以先尝试自行设计，有了一个自己的版本之后再来参考我的写法，可能会更有学习效果一些。
 {% endhint %}
 
@@ -179,9 +179,10 @@ void printGoods4Seller(const char* id);
 
 /**
  * @brief 打印出售中的商品
- * 
+ *
+ * @param id 需要打印商品的买家id
  */
-void printGoods4Buyer();
+void printGoods4Buyer(const char* id)
 ```
 
 {% hint style="info" %}
@@ -201,6 +202,8 @@ void printGoods4Buyer();
 #include "good/good.h"
 
 #include <stdio.h>
+
+static const char* filePath = "src/data/good.txt";
 
 void pullGoods() {
     totalGood = 0;
@@ -247,6 +250,8 @@ Good* getGood(int idex) { return goods + idex; }
 
 #include <stdio.h>
 
+static const char* stateName[] = {"Selling", "Sold", "Banned"};
+
 void goodInfo(int i) {
     printf("ID:            | %s\n", goods[i].id);
     printf("Name:          | %s\n", goods[i].name);
@@ -257,6 +262,8 @@ void goodInfo(int i) {
     printf("State:         | %s\n", stateName[goods[i].state]);
 }
 ```
+
+因为商品状态是用枚举类型表示的，而枚举类型本质上只是一个无符号整数，但用户需要看到的应该是一个表示状态的字符串，所以我们使用`stateName`数组建立起枚举类型和对应字符串之间的映射关系。这样在打印的时候就可以打印状态名称，而不是`012`了。
 
 #### 添加新商品
 
@@ -324,10 +331,8 @@ int deleteGood(const char* id, const char* who) {
 
 #include <stdio.h>
 
-static const char* filePath = "src/data/good.txt";
 static const char* header = "|ID         |Name       |Price      |Date       |Seller     |State      |";
 static const char* divide = "+-----------+-----------+-----------+-----------+-----------+-----------+";
-static const char* stateName[] = {"Selling", "Sold", "Banned"};
 
 /**
  * @brief 打印单个商品作为表格的一行
@@ -348,5 +353,94 @@ void printGoods() {
 }
 ```
 
+#### 为买家搜索商品
 
+```c
+// good.c
+#include "good/good.h"
+#include "tools/info.h"
 
+#include <string.h>
+
+void searchGoodName4Buyer(const char* name) {
+    print_header
+    for (int i = 0; i < totalGood; i++)
+        if (goods[i].state == SELLING && strstr(goods[i].name, name)) {
+            printGood(i);
+            print_divide
+        }
+}
+```
+
+{% hint style="warning" %}
+这里我采用的匹配方式是字串匹配，用到了string.h中的strstr函数，不清楚的读者可以寻找相关教程查看一下。
+
+参考教程： [https://www.runoob.com/cprogramming/c-function-strstr.html](https://www.runoob.com/cprogramming/c-function-strstr.html)
+
+之后再次使用该函数便不再特别说明。
+{% endhint %}
+
+#### 为管理员搜索商品
+
+```c
+// good.c
+#include "good/good.h"
+#include "tools/info.h"
+
+#include <string.h>
+
+void searchGoodName4Admin(const char* name) {
+    print_header
+    for (int i = 0; i < totalGood; i++)
+        if (strstr(goods[i].name, name)) {
+            printGood(i);
+            print_divide
+        }
+}
+```
+
+#### 打印给定卖家id的商品
+
+```c
+// good.c
+#include "good/good.h"
+#include "tools/info.h"
+
+#include <string.h>
+
+void printGoods4Seller(const char* id) {
+    print_header
+    for (int i = 0; i < totalGood; i++)
+        if (strcmp(goods[i].seller_id, id) == 0) {
+            printGood(i);
+            print_divide
+        }
+}
+```
+
+#### 打印出售中的商品
+
+```c
+// good.c
+#include "good/good.h"
+#include "tools/info.h"
+
+#include <string.h>
+
+void searchGoodName4Admin(const char* name, const char* id) {
+    print_header
+    for (int i = 0; i < totalGood; i++)
+        if (strstr(goods[i].name, name)) {
+            printGood(i);
+            print_divide
+        }
+}
+```
+
+{% hint style="info" %}
+这里的买家id其实用不到，这里放了这样一个参数其实是为了和其他几个打印函数保持接口上形式的统一。这样的话，到了交互界面阶段进行泛化处理的时候可以统一起来。这个点暂时按下不表，等到后面就知道了，可以期待一下哈。
+{% endhint %}
+
+{% hint style="success" %}
+至此我们已经完成了商品数据结构模块的编写，之后编写交互界面的时候只需要根据用户的需求调用这些封装好的数据结构接口就可以了。干得漂亮，我们继续完成最后一块——订单的数据结构吧！
+{% endhint %}

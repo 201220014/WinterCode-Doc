@@ -134,7 +134,7 @@ void getDate(char* dest) {
 ```
 
 {% hint style="warning" %}
-生成日期的函数用到了time.h头文件，可以先寻找相关教程学习一下。
+生成日期的函数用到了`time.h`头文件，可以先寻找相关教程学习一下。
 
 参考教程：[https://www.runoob.com/cprogramming/c-standard-library-time-h.html](https://www.runoob.com/cprogramming/c-standard-library-time-h.html)
 
