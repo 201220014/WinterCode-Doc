@@ -44,6 +44,7 @@ description: 搭建储存和操作订单信息的底层数据结构
 ## 模块头文件接口设计
 
 ```c
+// order.h
 #ifndef _ORDER_H_
 #define _ORDER_H_
 
@@ -104,7 +105,18 @@ void printOrders4Buyer(const char* id);
 
 ## 模块源文件实现
 
+在config.h中加入约定的最大订单数量：
+
 ```c
+// config.h
+
+#define MAX_ORDER   256
+```
+
+编写接口的实现模块
+
+```c
+// order.c
 #include "order/order.h"
 #include "tools/info.h"
 #include <stdio.h>

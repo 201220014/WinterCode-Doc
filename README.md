@@ -6,6 +6,8 @@ coverY: 0
 
 # 😄 欢迎来到 WinterCode
 
+**Author： CJC from NJU**
+
 **Email： 201220014@smail.nju.edu.cn**
 
 ## 概况与环境&#x20;
