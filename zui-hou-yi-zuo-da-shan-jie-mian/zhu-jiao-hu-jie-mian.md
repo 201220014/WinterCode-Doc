@@ -77,7 +77,22 @@ static void T##YPE##_Login() {\
 }
 ```
 
+{% hint style="info" %}
+这里辅助宏的设计思路和原则在之前已经讲过了，如果还不熟悉的话可以回头去再看一下。
+{% endhint %}
+
 ## 主交互页面的实现
+
+> 提醒一下`interface.h`中的头文件包含：
+>
+> ```c
+> // interface.h
+> #include "tools/hint.h"
+> #include "menu/menu.h"
+> #include "user/user.h"
+> #include "good/good.h"
+> #include "order/order.h"
+> ```
 
 ```c
 // mainInterface.c
