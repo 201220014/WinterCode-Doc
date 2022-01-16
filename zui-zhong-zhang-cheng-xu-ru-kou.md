@@ -1,5 +1,8 @@
 ---
 description: 画龙点睛的时刻到啦！
+cover: >-
+  https://images.unsplash.com/photo-1618438051900-493168c9ea50?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxOTcwMjR8MHwxfHNlYXJjaHw2fHxmaW5hbHxlbnwwfHx8fDE2NDIzMzY5Njk&ixlib=rb-1.2.1&q=85
+coverY: 205.3953488372093
 ---
 
 # 🚪 最终章——程序入口
@@ -43,6 +46,6 @@ int main() {
 程序的参考代码仓库： [https://github.com/201220014/WhaleMarket](https://github.com/201220014/WhaleMarket)
 
 {% hint style="success" %}
-恭喜你，经过这次项目，相信你已经完成了从C-Beginner到C-Advanced-Beginner的蜕变，愿你前途坦然，bug不再。
+恭喜你，经过这次项目，相信你已经完成了从C-Beginner到C-Advanced-Beginner的蜕变。
 {% endhint %}
 
