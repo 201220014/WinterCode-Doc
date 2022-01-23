@@ -7,6 +7,56 @@ coverY: 205.3953488372093
 
 # 🚪 最终章——程序入口
 
+## 当前进度
+
+```c
+.---+- include -+- tools -+- color.h
+    |           |         +- hint.h
+    |           |         +- info.h
+    |           | 
+    |           +- user  -+- user.h
+    |           |
+    |           +- good  -+- good.h
+    |           |
+    |           +- order -+- order.h
+    |           |
+    |           +- menu  -+- menu.h
+    |           |
+    |           +- interface -+- interface.h
+    |           |
+    |           +- config.h
+    |
+    +-   src   -+- tools -+- color.c
+                |         +- hint.c
+                |         +- info.c 
+                |
+                +- data  -+- id.txt
+                |         +- user.txt
+                |         +- good.txt 
+                |         +- order.txt
+                |
+                +- user  -+- user.c 
+                |
+                +- good  -+- good.c
+                |
+                +- order -+- order.c
+                |
+                +- menu  -+- menu.c
+                |
+                +- interface -+- mainInterface.c
+                |            -+- adminInterface.c
+                |            -+- userInterface.c
+                |            -+- infoInterface.c
+                |            -+- modifyInterface.c
+                |            -+- sellerInterface.c
+                |            -+- goodInterface.c
+                |            -+- buyerInterface.c
+                |
+                +- main.c <---
+```
+
+## 程序入口
+
 我们回顾一下最开始的我们的整体思路：
 
 ![项目框架](.gitbook/assets/pic01.png)
