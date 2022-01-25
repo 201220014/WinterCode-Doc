@@ -156,7 +156,7 @@ int mainMenu() {
 
 我们现预览一下，整个项目中所需要的菜单结构如下：
 
-![](.gitbook/assets/pic05.png)
+![](<.gitbook/assets/pic05 (1).png>)
 
 > 其实这也是我们之后编写交互界面的结构。
 

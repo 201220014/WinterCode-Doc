@@ -59,6 +59,8 @@ Linux文件管理基本命令： [https://www.runoob.com/linux/linux-file-conten
 
 > 更加具体的需求以及示例详见：[https://github.com/201220014/WhaleMarket](https://github.com/201220014/WhaleMarket)
 >
+> **github无法正常显示图片的可以看教程中“详细需求补充”这一页。**
+>
 > 也可以下载参考版的源码在环境中构建项目并运行进行预览。
 
 {% hint style="info" %}
