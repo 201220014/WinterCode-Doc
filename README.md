@@ -32,6 +32,14 @@ VSCode： [https://code.visualstudio.com/](https://code.visualstudio.com)
 Linux文件管理基本命令： [https://www.runoob.com/linux/linux-file-content-manage.html](https://www.runoob.com/linux/linux-file-content-manage.html)
 {% endhint %}
 
+{% hint style="warning" %}
+建议没有环境的同学尝试自己上网搜索教程配置，锻炼一下配环境的能力。
+
+参考教程：[https://box.nju.edu.cn/f/bf8b3075561c4a168b25/](https://box.nju.edu.cn/f/bf8b3075561c4a168b25/)
+
+上述环境配置教程来源于2021春南京大学程设基础实验课程project2的一位助教哥哥。
+{% endhint %}
+
 ## 需求汇总
 
 ![](.gitbook/assets/pic00.png)
