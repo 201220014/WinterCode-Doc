@@ -59,24 +59,25 @@ description: 修改商品信息交互界面的实现
 
 #include <stdio.h>
 #include <string.h>
+#include <stdlib.h>
 
-static void modify_passwd() {
+int curGood = -1;
+
+make_modify(name, G, ood)
+make_modify(description, G, ood)
+
+static void modify_price() {
     char buffer[MAX_LEN];
-    printf("Please input current password: ");
+    printf("Please input new price: ");
     scanf("%s", buffer);
-    User* u = getUser(curUser);
-    if (strcmp(u->passwd, buffer)) fail
-    printf("Please input new password: ");
-    scanf("%s", buffer);
-    strcpy(u->passwd, buffer);
+    check_double
+    Good* x = getGood(curGood);
+    x->price = m;
     successMessage();
 }
 
-make_modify(contact, U, ser)
-make_modify(address, U, ser)
-
-static HANDLER handler[] = {modify_passwd, modify_contact, modify_address};
-make_interface(M, ODIFY)
+static HANDLER handler[] = {modify_name, modify_price, modify_description};
+make_interface(G, OOD)
 ```
 
 {% hint style="success" %}
