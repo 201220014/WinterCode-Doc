@@ -416,7 +416,7 @@ make_interface(I, NFO)
 // modifyInterface.c
 #include "interface/interface.h"
 
-static HANDLER handler[] = {inv, inv, i};nv
+static HANDLER handler[] = {inv, inv, inv};
 make_interface(M, ODIFY)
 ```
 
