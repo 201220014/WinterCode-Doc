@@ -182,7 +182,7 @@ void printGoods4Seller(const char* id);
  *
  * @param id 需要打印商品的买家id
  */
-void printGoods4Buyer(const char* id)
+void printGoods4Buyer(const char* id);
 ```
 
 {% hint style="info" %}
